@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace QuanLyThuVien
 {
     public class NhanVien
@@ -11,17 +12,20 @@ namespace QuanLyThuVien
         public string ChucVu { get; set; }
         public string SoDienThoai { get; set; }
     }
+
     public class TheLoai
     {
         public string MaTheLoai { get; set; }
         public string TenTheLoai { get; set; }
     }
+
     public class NhaXuatBan
     {
         public string MaNhaXuatBan { get; set; }
         public string DiaChi { get; set; }
         public string SoDienThoai { get; set; }
     }
+
     public class DauSach
     {
         public string MaDauSach { get; set; }
@@ -31,6 +35,7 @@ namespace QuanLyThuVien
         public string MaTheLoai { get; set; }
         public string MaNhaXuatBan { get; set; }
     }
+
     public class DocGia
     {
         public string MaDocGia { get; set; }
@@ -43,19 +48,29 @@ namespace QuanLyThuVien
         public string Email { get; set; }
         public string Anh3x4 { get; set; }
     }
+
     public class KetQuaXuLy
     {
         public bool ThanhCong { get; private set; }
+        public string ThongBao { get; private set; }
 
-public string ThongBao { get; private set; }
         private KetQuaXuLy(bool thanhCong, string thongBao)
         {
             ThanhCong = thanhCong;
             ThongBao = thongBao;
         }
-        public static KetQuaXuLy Ok(string thongBao) { return new KetQuaXuLy(true, thongBao); }
-        public static KetQuaXuLy Loi(string thongBao) { return new KetQuaXuLy(false, thongBao); }
+
+        public static KetQuaXuLy Ok(string thongBao)
+        {
+            return new KetQuaXuLy(true, thongBao);
+        }
+
+        public static KetQuaXuLy Loi(string thongBao)
+        {
+            return new KetQuaXuLy(false, thongBao);
+        }
     }
+
     public class ThongKeTongHop
     {
         public int LuotSachMuon { get; set; }
