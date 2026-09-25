@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA8A61EB-E7B5-49B4-B0BB-DCE3B77E561A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyKhachSan</RootNamespace>
+    <AssemblyName>QuanLyKhachSan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>7.3</LangVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Db.cs" />
+    <Compile Include="Forms\FrmDanhMuc.Designer.cs">
+      <DependentUpon>FrmDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDatPhong.Designer.cs">
+      <DependentUpon>FrmDatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDichVu.Designer.cs">
+      <DependentUpon>FrmDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPhongTienNghi.Designer.cs">
+      <DependentUpon>FrmPhongTienNghi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPhongTienNghi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmThongKe.Designer.cs">
+      <DependentUpon>FrmThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTraPhong.Designer.cs">
+      <DependentUpon>FrmTraPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ui.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Services\DanhMucService.cs" />
+    <Compile Include="Services\DatPhongService.cs" />
+    <Compile Include="Services\DichVuService.cs" />
+    <Compile Include="Services\PhongTienNghiService.cs" />
+    <Compile Include="Services\ThongKeService.cs" />
+    <Compile Include="Services\TraPhongService.cs" />
+    <EmbeddedResource Include="Forms\FrmDanhMuc.resx">
+      <DependentUpon>FrmDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDatPhong.resx">
+      <DependentUpon>FrmDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDichVu.resx">
+      <DependentUpon>FrmDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPhongTienNghi.resx">
+      <DependentUpon>FrmPhongTienNghi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmThongKe.resx">
+      <DependentUpon>FrmThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTraPhong.resx">
+      <DependentUpon>FrmTraPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Assets\bed.png" />
+    <None Include="Assets\bed.svg" />
+    <None Include="Assets\chart.png" />
+    <None Include="Assets\chart.svg" />
+    <None Include="Assets\clipboard.png" />
+    <None Include="Assets\clipboard.svg" />
+    <None Include="Assets\exit.png" />
+    <None Include="Assets\exit.svg" />
+    <None Include="Assets\gear.png" />
+    <None Include="Assets\gear.svg" />
+    <None Include="Assets\key.png" />
+    <None Include="Assets\key.svg" />
+    <None Include="Assets\payment.png" />
+    <None Include="Assets\payment.svg" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
