@@ -27,7 +27,8 @@ namespace QuanLyKhachSan.Data
         { using (var cmd = Command(c, t, sql, args)) return cmd.ExecuteScalar(); }
         public static int Execute(SqlConnection c, SqlTransaction t, string sql, params object[] args)
         { using (var cmd = Command(c, t, sql, args)) return cmd.ExecuteNonQuery(); }
-
+        // LAB quy mô nhỏ: một khóa nghiệp vụ dùng chung giúp tuần tự hóa các thao tác ghi.
+        // Tất cả Service ghi đều đi qua Tx; không coi đây là bảo vệ cho SQL chạy ngoài ứng dụng.
         public static void Tx(Action<SqlConnection, SqlTransaction> action)
         {
             using (var c = Open()) using (var t = c.BeginTransaction())
