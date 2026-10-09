@@ -1,76 +1,58 @@
-﻿# LAB 5 – Quản lý công ty du lịch Văn Hóa Việt
+﻿
+## LAB5/README.md
 
-## Thông tin sinh viên
+```md
+# ✈️ LAB 5 — Quản lý công ty du lịch
 
-- **Họ và tên:** Trần Văn Hiếu
-- **MSSV:** 1250080054
+[← Quay về trang chủ repository](../)
 
-## Giới thiệu
+## 📌 Thông tin
 
-Bài LAB phân tích và thiết kế hệ thống quản lý công ty du lịch Văn Hóa Việt.
+| Nội dung | Chi tiết |
+|:--|:--|
+| Sinh viên | Trần Văn Hiếu |
+| MSSV | 1250080054 |
+| Chủ đề | Phân tích, thiết kế hệ thống quản lý công ty du lịch |
 
-Hệ thống hỗ trợ quản lý tour, hành trình, chuyến khách lẻ, đăng ký theo đoàn, phân công hướng dẫn viên, thanh toán, khảo sát khách hàng và thống kê.
+## 🎯 Mục tiêu
 
-## Mục tiêu
+Phân tích và thiết kế các chức năng quản lý tour, chuyến du lịch, đăng ký khách, hướng dẫn viên và thống kê cho hệ thống công ty du lịch.
 
-- Phân tích các nghiệp vụ của công ty du lịch.
-- Xây dựng mô hình UML theo pha phân tích và pha thiết kế.
-- Bổ sung phân rã Use Case, sơ đồ tuần tự và sơ đồ hoạt động.
-- Thiết kế cơ sở dữ liệu SQL Server nhất quán với mô hình lớp.
-- Xây dựng ứng dụng C# WinForms theo kiến trúc UI → Service → Data.
-- Xây dựng kịch bản kiểm thử và truy vết yêu cầu.
+## 🧭 Nội dung thực hiện
 
-## Các chức năng chính
+### Lập lịch chuyến khách lẻ
 
-| Chức năng | Nội dung |
-|---|---|
-| Quản lý danh mục | Phương tiện, điểm bán vé, hướng dẫn viên và điểm tham quan |
-| Quản lý tour | Thông tin tour, điểm dừng và phương tiện theo chặng |
-| Quản lý chuyến khách lẻ | Tạo lịch chuyến, xác định ngày về và đóng đăng ký |
-| Đăng ký khách lẻ | Chọn chuyến, ghi nhận khách và thanh toán vé |
-| Đăng ký theo đoàn | Quản lý phiếu đoàn, thành viên, bảo hiểm và tiền cọc |
-| Phân công hướng dẫn viên | Phân công theo chuyến hoặc đoàn, kiểm tra trùng lịch |
-| Thanh toán và khảo sát | Thanh toán sau tour, gửi khảo sát và ghi nhận phản hồi |
-| Lương và thống kê | Tính lương hướng dẫn viên và thống kê tổng hợp |
+Use case **Lập lịch chuyến khách lẻ** do nhân viên điều hành thực hiện, gồm hai nhánh chức năng:
 
-## Công nghệ sử dụng
+- Tạo chuyến.
+- Đóng đăng ký.
 
-- **Ngôn ngữ:** C#
-- **Giao diện:** Windows Forms
-- **Nền tảng:** .NET Framework 4.7.2
-- **Cơ sở dữ liệu:** SQL Server
-- **Môi trường phát triển:** Visual Studio 2026
-- **Công cụ vẽ UML:** draw.io
+Khi tạo chuyến, hệ thống kiểm tra thông tin bắt buộc, kiểm tra tour đang mở bán, tính ngày về theo số ngày của tour và lưu dữ liệu chuyến đi.
 
-## Kiến trúc ứng dụng
+## 📐 Mô hình thiết kế
 
-**UI → Service → Data → SQL Server**
+- Phân rã Use Case: Lập lịch chuyến khách lẻ.
+- Sequence Diagram: Tạo chuyến khách lẻ.
+- Activity Diagram: Tạo chuyến khách lẻ.
 
-- **UI:** Hiển thị giao diện, nhận thông tin và thông báo kết quả.
-- **Service:** Xử lý nghiệp vụ và kiểm tra các điều kiện.
-- **Data:** Thực hiện truy vấn và cập nhật cơ sở dữ liệu.
+## 🖥️ Giao diện hệ thống
 
-## Nội dung UML bổ sung
+Các giao diện được thiết kế gồm:
 
-Chức năng được chọn bổ sung là **lập lịch chuyến khách lẻ**, gồm:
+- `FrmMain`: điều hướng hệ thống.
+- `FrmDanhMuc`: quản lý phương tiện, điểm bán vé, hướng dẫn viên và điểm tham quan.
+- `FrmTour`: quản lý tour, điểm dừng, phương tiện theo chặng và điểm tham quan.
+- `FrmChuyenLe`: lập lịch chuyến khách lẻ và đóng đăng ký.
+- `FrmDangKyLe`: đăng ký và thanh toán vé khách lẻ.
+- `FrmDangKyDoan`: quản lý phiếu đăng ký đoàn và danh sách người đi.
+- `FrmPhanCongHDV`: phân công hướng dẫn viên không trùng lịch.
+- `FrmKetThucKhaoSat`: thanh toán sau tour, khảo sát và góp ý khách hàng.
+- `FrmLuongThongKe`: quản lý lương hướng dẫn viên và thống kê tổng hợp.
 
-- Sơ đồ phân rã Use Case.
-- Sơ đồ tuần tự tạo chuyến khách lẻ.
-- Sơ đồ hoạt động tạo chuyến khách lẻ.
+## 📄 Báo cáo
 
-## Hướng dẫn chạy
+[📥 Xem báo cáo LAB 5](./1250080084_TranVanHieu_LAB5.docx)
 
-1. Mở solution của project trong Visual Studio.
-2. Chuẩn bị cơ sở dữ liệu SQL Server theo script của bài LAB.
-3. Kiểm tra kết nối `QuanLyCongTyDuLichDB` trong `App.config`.
-4. Đặt project ứng dụng làm Startup Project.
-5. Chọn **Build → Rebuild Solution**.
-6. Nhấn **F5** hoặc **Ctrl + F5** để chạy.
+---
 
-> Lưu ý: Kiểm tra script trước khi chạy trên cơ sở dữ liệu có dữ liệu cần giữ.
-
-## Trạng thái kiểm tra
-
-- Đã biên dịch thành công với .NET Framework 4.7.2.
-- Đã kiểm tra hiển thị 9 Form với tổng cộng 17 màn hình/tab.
-- Các thao tác nghiệp vụ với SQL Server cần được kiểm thử riêng bằng dữ liệu thử nghiệm.
+> *LAB 5 — Trần Văn Hiếu · MSSV 1250080054*

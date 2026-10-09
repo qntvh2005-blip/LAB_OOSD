@@ -1,48 +1,34 @@
-Trần Văn Hiếu
-1250080054
+# 🛒 LAB 4 — Phân tích và thiết kế hệ thống e-SHOPPING
 
-Hướng dẫn chạy project e-SHOPPING
+[← Quay về trang chủ repository](../)
 
-1. Tạo cơ sở dữ liệu
+## 📌 Thông tin
 
-Mở SQL Server Management Studio.
+| Nội dung | Chi tiết |
+|:--|:--|
+| Sinh viên | Trần Văn Hiếu |
+| MSSV | 1250080054 |
+| Chủ đề | Phân tích, thiết kế và kiểm thử hệ thống mua sắm trực tuyến |
 
-Kết nối server .\MSSQLSERVER05 bằng Windows Authentication.
+## 🎯 Mục tiêu
 
-Mở file Database.sql trong thư mục Database.
+Phân tích, thiết kế và xây dựng prototype cho hệ thống mua sắm trực tuyến e-SHOPPING theo phương pháp hướng đối tượng.
 
-Nhấn Execute để tạo CSDL ESHOPPING_LAB4 và dữ liệu cấu hình mẫu.
+## ⚙️ Chức năng chính
 
-2. Cấu hình kết nối
+- Xem sản phẩm theo nhóm và xem chi tiết sản phẩm.
+- Quản lý giỏ hàng: thêm, sửa số lượng và xóa sản phẩm.
+- Đăng ký tài khoản và đăng nhập.
+- Nhập thông tin người nhận.
+- Chọn khu vực và hình thức giao hàng.
+- Tính phí giao hàng, lệ phí thẻ và tổng thanh toán.
+- Xác minh thanh toán trực tuyến.
+- Ghi nhận đơn hàng và chi tiết đơn hàng.
+- Gửi email xác nhận đơn hàng.
 
-Mở App.config của project e-SHOPPING và sử dụng:
+## 🏗️ Kiến trúc thiết kế
 
-<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-  <startup useLegacyV2RuntimeActivationPolicy="true">
-    <supportedRuntime version="v4.0"
-                      sku=".NETFramework,Version=v4.7.2" />
-  </startup>
+Hệ thống sử dụng kiến trúc:
 
-  <connectionStrings>
-    <add name="ESHOPPING"
-         connectionString="Data Source=.\MSSQLSERVER05;Initial Catalog=ESHOPPING_LAB4;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=True"
-         providerName="System.Data.SqlClient" />
-  </connectionStrings>
-</configuration>
-
-Nếu dùng server khác, sửa Data Source cho phù hợp. Giữ nguyên tên kết nối ESHOPPING.
-
-3. Chạy chương trình
-
-Mở e-SHOPPING.sln bằng Visual Studio có hỗ trợ .NET Framework 4.7.2.
-
-Nhấn chuột phải project e-SHOPPING → Set as Startup Project.
-
-Chọn Build → Build Solution.
-
-Nhấn F5 để chạy ứng dụng.
-
-Chọn sản phẩm, thêm vào giỏ và tiếp tục đặt hàng.
-
-Đăng ký tài khoản mới nếu chưa có, sau đó đăng nhập.
+```text
+UI → Service / Adapter → Data
