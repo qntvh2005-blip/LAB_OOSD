@@ -1,7 +1,6 @@
 ﻿
 ## LAB5/README.md
 
-```md
 # ✈️ LAB 5 — Quản lý công ty du lịch
 
 [← Quay về trang chủ repository](../)
