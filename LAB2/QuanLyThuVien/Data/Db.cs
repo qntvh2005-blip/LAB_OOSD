@@ -1,4 +1,4 @@
-﻿using System.Configuration;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -10,9 +10,11 @@ namespace QuanLyThuVien.Data
         {
             get
             {
-                return ConfigurationManager
-                    .ConnectionStrings["QuanLyThuVienDb"]
-                    .ConnectionString;
+                if (ConfigurationManager.ConnectionStrings["QuanLyThuVienDb"] != null)
+                {
+                    return ConfigurationManager.ConnectionStrings["QuanLyThuVienDb"].ConnectionString;
+                }
+                return @"Data Source=.\MSSQLSERVER05;Initial Catalog=QuanLyThuVienDB;Integrated Security=True;TrustServerCertificate=True;";
             }
         }
 
