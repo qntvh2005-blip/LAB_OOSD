@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="hemUMlwNK-OdkJv_deHO">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys_box" parent="1" style="shape=folder;fontStyle=1;tabWidth=130;tabHeight=0;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.5;verticalAlign=top;align=center;spacingTop=6;fontFamily=Times New Roman;fontSize=15;fontColor=#000000;" value="He_Thong Quan Ly Cong Ty Du Lich" vertex="1">
+          <mxGeometry height="750" width="700" x="248" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="act_kh" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=none;spacingTop=4;" value="Khach hang" vertex="1">
+          <mxGeometry height="65" width="35" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="act_nvbv" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=none;spacingTop=4;" value="NV ban ve" vertex="1">
+          <mxGeometry height="65" width="35" x="40" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="act_nvkd" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=none;spacingTop=4;" value="NV kinh doanh" vertex="1">
+          <mxGeometry height="65" width="35" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="act_cskh" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=none;spacingTop=4;" value="NV cham soc KH" vertex="1">
+          <mxGeometry height="65" width="35" x="40" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="act_nvdh" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=none;spacingTop=4;" value="NV dieu hanh" vertex="1">
+          <mxGeometry height="65" width="35" x="1120" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="act_kt" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=none;spacingTop=4;" value="Ke toan" vertex="1">
+          <mxGeometry height="65" width="35" x="1120" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_xem_tour" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Xem thong tin tour" vertex="1">
+          <mxGeometry height="50" width="105" x="385" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_dk_khach_le" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Dang ky khach le&lt;br&gt;theo chuyen" vertex="1">
+          <mxGeometry height="50" width="105" x="385" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_lap_phieu_doan" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Lap phieu dang ky&lt;br&gt;theo doan" vertex="1">
+          <mxGeometry height="50" width="105" x="385" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_huy_doan" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Huy dang ky doan&lt;br&gt;(mat coc)" vertex="1">
+          <mxGeometry height="50" width="105" x="385" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_khao_sat" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Khao sat khach hang" vertex="1">
+          <mxGeometry height="50" width="105" x="385" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_ql_danhmuc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Quan ly danh muc" vertex="1">
+          <mxGeometry height="50" width="105" x="710" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_ql_tour" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Quan ly tour -&lt;br&gt;hanh trinh" vertex="1">
+          <mxGeometry height="50" width="105" x="710" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_lap_lich_le" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Lap lich chuyen&lt;br&gt;khach le" vertex="1">
+          <mxGeometry height="50" width="105" x="710" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_phan_cong_hdv" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Phan cong&lt;br&gt;huong dan vien" vertex="1">
+          <mxGeometry height="50" width="105" x="710" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_thanh_toan_sau" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Thanh toan&lt;br&gt;sau tour (doan)" vertex="1">
+          <mxGeometry height="50" width="105" x="710" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_tinh_luong" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.8;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;spacingTop=6;" value="Tinh luong HDV,&lt;br&gt;thong ke" vertex="1">
+          <mxGeometry height="50" width="105" x="710" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="act_kh" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_xem_tour" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="act_nvbv" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_dk_khach_le" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="1" source="act_nvkd" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_lap_phieu_doan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="1" source="act_nvkd" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_huy_doan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_5" edge="1" parent="1" source="act_cskh" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_khao_sat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_6" edge="1" parent="1" source="act_nvdh" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_ql_danhmuc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_7" edge="1" parent="1" source="act_nvdh" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_ql_tour" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_8" edge="1" parent="1" source="act_nvdh" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_lap_lich_le" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_9" edge="1" parent="1" source="act_nvdh" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_phan_cong_hdv" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_10" edge="1" parent="1" source="act_kt" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_thanh_toan_sau" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_11" edge="1" parent="1" source="act_kt" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.5;endArrow=open;endSize=10;" target="uc_tinh_luong" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="5w3r0M9BQ1Spd3_I5ipQ">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="13" width="13" x="10" y="103" as="geometry" />
+        </mxCell>
+        <mxCell id="dadat" parent="1" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=11;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Da dat&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;entry/ luu chi tiet phong&lt;/span&gt;&lt;div&gt;entry/ Phong = Da dat&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="140" x="160" y="84.5" as="geometry" />
+        </mxCell>
+        <mxCell id="dango" parent="1" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=11;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Dang o&lt;/span&gt;&lt;/div&gt;entry/ ghi NgayNhanThucTe&lt;br&gt;entry/ Phong = Dang o" vertex="1">
+          <mxGeometry height="56" width="140" x="390" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="datra" parent="1" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=11;align=left;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Da tra&lt;/span&gt;&lt;/div&gt;entry/ ghi NgayTraThucTe&lt;br&gt;entry/ Phong = Trong" vertex="1">
+          <mxGeometry height="50" width="130" x="660" y="13" as="geometry" />
+        </mxCell>
+        <mxCell id="noshow" parent="1" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=11;" value="No-show&lt;br&gt;entry/ Phong = Trong" vertex="1">
+          <mxGeometry height="39" width="115" x="398" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" edge="1" parent="1" source="start" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=classic;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" target="dadat" value="TaoDatPhong()&lt;br&gt;[hop le, khong trung lich]">
+          <mxGeometry relative="1" x="-0.1015" y="19" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2" edge="1" parent="1" source="dadat" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=classic;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" target="dango" value="NhanPhong()">
+          <mxGeometry relative="1" x="-0.2153" y="18" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t3" edge="1" parent="1" source="dango" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=classic;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" target="datra" value="TraPhong()&lt;br&gt;[hoa don da thanh toan]">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t4" edge="1" parent="1" source="dadat" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=classic;endFill=1;fontSize=10;labelBackgroundColor=#FFFFFF;" target="noshow" value="DanhDauNoShow()">
+          <mxGeometry relative="1" x="0.2638" y="25" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t5" edge="1" parent="1" source="datra" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=classic;endFill=1;" target="WTEKZMHOcRJzDzPgY-7x-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="847.394849" y="106.90575100000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t6" edge="1" parent="1" source="noshow" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=classic;endFill=1;" target="WTEKZMHOcRJzDzPgY-7x-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="846.1624839999997" y="113.79534699999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTEKZMHOcRJzDzPgY-7x-1" edge="1" parent="1" source="dadat" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=-0.005;exitY=0.377;exitDx=0;exitDy=0;entryX=0.999;entryY=0.366;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" target="dadat" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="290" y="140" as="sourcePoint" />
+            <mxPoint x="340" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTEKZMHOcRJzDzPgY-7x-2" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=-0.001;exitY=0.451;exitDx=0;exitDy=0;entryX=0.978;entryY=0.458;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="398.7050000000001" y="184.999" as="sourcePoint" />
+            <mxPoint x="511.2899999999999" y="185.27200000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTEKZMHOcRJzDzPgY-7x-3" edge="1" parent="1" source="dango" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.001;exitY=0.362;exitDx=0;exitDy=0;entryX=1;entryY=0.357;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" target="dango" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="397.9950000000001" y="84.499" as="sourcePoint" />
+            <mxPoint x="510.58" y="84.77200000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTEKZMHOcRJzDzPgY-7x-4" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=light-dark(#000000, #ff9090);" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="850" y="104.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WTEKZMHOcRJzDzPgY-7x-5" edge="1" parent="1" source="datra" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.003;exitY=0.351;exitDx=0;exitDy=0;entryX=0.999;entryY=0.351;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" target="datra" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="650" y="70" as="sourcePoint" />
+            <mxPoint x="790" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

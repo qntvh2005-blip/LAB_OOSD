@@ -1,0 +1,134 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="7Sq2taiqPek_HeJULytH">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s_nhap_tt" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=13;fontStyle=1;" value="Nhập thông tin đặt hàng" vertex="1">
+          <mxGeometry height="65" width="260" x="270" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="s_cho_xm" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=13;fontStyle=1;" value="Chờ xác minh thanh toán" vertex="1">
+          <mxGeometry height="65" width="260" x="270" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="s_loi_kn" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=13;fontStyle=1;" value="Lỗi kết nối thanh toán" vertex="1">
+          <mxGeometry height="65" width="230" x="680" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="s_ghi_nhan" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=13;fontStyle=1;" value="Đang ghi nhận đơn hàng" vertex="1">
+          <mxGeometry height="65" width="260" x="270" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="s_loi_gn" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=13;fontStyle=1;" value="Lỗi ghi nhận" vertex="1">
+          <mxGeometry height="65" width="230" x="680" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="s_hoan_tat" parent="1" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=13;fontStyle=1;" value="Hoàn tất" vertex="1">
+          <mxGeometry height="65" width="260" x="270" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="t_loop_nhap" edge="1" parent="1" source="s_nhap_tt" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=1;exitY=0.25;entryX=1;entryY=0.75;curved=0;" target="s_nhap_tt">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="116" />
+              <mxPoint x="600" y="149" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_loop_nhap" connectable="0" parent="t_loop_nhap" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=none;" value="Dữ liệu chưa hợp lệ" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="-12" as="geometry">
+            <mxPoint x="45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_nhap_cho" edge="1" parent="1" source="s_nhap_tt" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="s_cho_xm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_nhap_cho" connectable="0" parent="t_nhap_cho" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=#FFFFFF;" value="Xác nhận / Dữ liệu hợp lệ" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_cho_nhap" edge="1" parent="1" source="s_cho_xm" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=0;exitY=0.5;entryX=0;entryY=0.5;curved=0;" target="s_nhap_tt">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="342" />
+              <mxPoint x="100" y="132" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_cho_nhap" connectable="0" parent="t_cho_nhap" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=#FFFFFF;" value="Bị từ chối&lt;br&gt;Thông báo lỗi" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_cho_loikn" edge="1" parent="1" source="s_cho_xm" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="s_loi_kn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_cho_loikn" connectable="0" parent="t_cho_loikn" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=#FFFFFF;" value="Không nhận được kết quả" vertex="1">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_loikn_cho" edge="1" parent="1" source="s_loi_kn" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=0.5;exitY=0;entryX=0.85;entryY=0;curved=0;" target="s_cho_xm">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="250" />
+              <mxPoint x="491" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_loikn_cho" connectable="0" parent="t_loikn_cho" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=#FFFFFF;" value="Khách chọn thử lại" vertex="1">
+          <mxGeometry relative="1" x="-0.1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_cho_ghinhan" edge="1" parent="1" source="s_cho_xm" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="s_ghi_nhan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_cho_ghinhan" connectable="0" parent="t_cho_ghinhan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=#FFFFFF;" value="Xác minh thành công" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_ghinhan_loign" edge="1" parent="1" source="s_ghi_nhan" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="s_loi_gn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ghinhan_loign" connectable="0" parent="t_ghinhan_loign" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=#FFFFFF;" value="Lưu đơn thất bại" vertex="1">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_loign_final" edge="1" parent="1" source="s_loi_gn" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HaUDuHjSlyXf2OfNSbvM-3">
+          <mxGeometry relative="1" x="0.0154" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="610" />
+            </Array>
+            <mxPoint x="795" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_ghinhan_hoantat" edge="1" parent="1" source="s_ghi_nhan" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="s_hoan_tat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ghinhan_hoantat" connectable="0" parent="t_ghinhan_hoantat" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=#FFFFFF;" value="Lưu đơn thành công" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_hoantat_final" edge="1" parent="1" source="s_hoan_tat" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeWidth=1.5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HaUDuHjSlyXf2OfNSbvM-1" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=light-dark(#000000, #ff9090);" value="" vertex="1">
+          <mxGeometry height="22" width="22" x="389" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="HaUDuHjSlyXf2OfNSbvM-3" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=light-dark(#000000, #ff9090);" value="" vertex="1">
+          <mxGeometry height="22" width="22" x="784" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="HaUDuHjSlyXf2OfNSbvM-5" parent="1" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=light-dark(#000000, #ff9090);" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="384" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HaUDuHjSlyXf2OfNSbvM-6" edge="1" parent="1" source="HaUDuHjSlyXf2OfNSbvM-5" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=light-dark(#000000, #ff9090);rounded=0;defaultLabelBackgroundColor=page;strokeWidth=1;" target="s_nhap_tt" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

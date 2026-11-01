@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="1-FPg9nc7kBz-5-i02-I">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node_start" parent="1" style="ellipse;fillColor=#000000;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="188" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="act_nhap_tt" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontSize=12;fontColor=#000000;" value="Nhập thông tin người nhận,&lt;br&gt;loại giao hàng và thông tin thẻ" vertex="1">
+          <mxGeometry height="65" width="280" x="60" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="act_kiem_tra" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontSize=12;fontColor=#000000;" value="Kiểm tra dữ liệu, sản phẩm,&lt;br&gt;cấu hình và tính tổng tiền" vertex="1">
+          <mxGeometry height="65" width="280" x="60" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_dieu_kien" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontSize=12;fontColor=#000000;" value="Đủ điều kiện&lt;br&gt;đặt hàng?" vertex="1">
+          <mxGeometry height="75" width="260" x="70" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="act_xac_minh" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontSize=12;fontColor=#000000;" value="Xác minh thanh toán&lt;br&gt;qua PaymentAdapter" vertex="1">
+          <mxGeometry height="60" width="280" x="60" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_chap_nhan" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontSize=12;fontColor=#000000;" value="Xác minh được&lt;br&gt;chấp nhận?" vertex="1">
+          <mxGeometry height="75" width="260" x="70" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="act_luu_don" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontSize=12;fontColor=#000000;" value="Lưu đơn, chi tiết và xác minh&lt;br&gt;trong một transaction" vertex="1">
+          <mxGeometry height="60" width="280" x="60" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_luu_tc" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontSize=12;fontColor=#000000;" value="Lưu thành công?" vertex="1">
+          <mxGeometry height="75" width="260" x="70" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="act_hien_thi" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontSize=12;fontColor=#000000;" value="Hiển thị mã đơn;&lt;br&gt;gửi email xác nhận nếu khách có email" vertex="1">
+          <mxGeometry height="65" width="280" x="60" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="node_end_tc" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="188" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="merge_node" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="510" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="act_thong_bao_loi" parent="1" style="rounded=1;arcSize=15;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontSize=12;fontColor=#000000;" value="Thông báo lỗi hoặc yêu cầu&lt;br&gt;xác nhận lại tổng tiền;&lt;br&gt;hoàn tác nếu lỗi lưu đơn" vertex="1">
+          <mxGeometry height="70" width="260" x="610" y="493" as="geometry" />
+        </mxCell>
+        <mxCell id="node_end_loi" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="728" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="e_start_act1" edge="1" parent="1" source="node_start" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="act_nhap_tt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_act1_act2" edge="1" parent="1" source="act_nhap_tt" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="act_kiem_tra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_act2_dec1" edge="1" parent="1" source="act_kiem_tra" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="dec_dieu_kien">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dec1_act3" edge="1" parent="1" source="dec_dieu_kien" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="act_xac_minh">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_dec1_co" connectable="0" parent="e_dec1_act3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=none;" value="Có" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_dec1_merge" edge="1" parent="1" source="dec_dieu_kien" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.5;entryX=0.5;entryY=0;curved=0;" target="merge_node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="528" y="313" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_dec1_khong" connectable="0" parent="e_dec1_merge" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=none;" value="Không" vertex="1">
+          <mxGeometry relative="1" x="-0.65" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_act3_dec2" edge="1" parent="1" source="act_xac_minh" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="dec_chap_nhan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dec2_act4" edge="1" parent="1" source="dec_chap_nhan" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="act_luu_don">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_dec2_co" connectable="0" parent="e_dec2_act4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=none;" value="Có" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_dec2_merge" edge="1" parent="1" source="dec_chap_nhan" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="merge_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_dec2_khong" connectable="0" parent="e_dec2_merge" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=none;" value="Không" vertex="1">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_act4_dec3" edge="1" parent="1" source="act_luu_don" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="dec_luu_tc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dec3_act5" edge="1" parent="1" source="dec_luu_tc" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="act_hien_thi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_dec3_co" connectable="0" parent="e_dec3_act5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=none;" value="Có" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_dec3_merge" edge="1" parent="1" source="dec_luu_tc" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.5;entryX=0.5;entryY=1;curved=0;" target="merge_node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="528" y="743" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_dec3_khong" connectable="0" parent="e_dec3_merge" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;fontSize=11;fontColor=#000000;backgroundColor=none;" value="Không" vertex="1">
+          <mxGeometry relative="1" x="-0.65" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_act5_end2" edge="1" parent="1" source="act_hien_thi" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="node_end_tc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_merge_act6" edge="1" parent="1" source="merge_node" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="act_thong_bao_loi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_act6_end1" edge="1" parent="1" source="act_thong_bao_loi" style="edgeStyle=none;html=1;endArrow=open;endFill=0;endSize=7;strokeColor=#000000;strokeWidth=1.2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="node_end_loi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

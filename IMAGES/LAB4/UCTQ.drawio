@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="j48KxBmmqt7CAOEpegbx">
+    <mxGraphModel dx="1429" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys_boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="970" width="660" x="170" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_sys_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;fontColor=#000000;fontFamily=Helvetica;" value="&lt;b&gt;e-SHOPPING&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_kh" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontColor=#000000;" value="Khách hàng" vertex="1">
+          <mxGeometry height="80" width="40" x="25" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="act_qlsp" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontColor=#000000;" value="Hệ thống quản lý&lt;br&gt;sản phẩm" vertex="1">
+          <mxGeometry height="80" width="40" x="915" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="act_payment" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontColor=#000000;" value="Dịch vụ thanh toán&lt;br&gt;trực tuyến" vertex="1">
+          <mxGeometry height="80" width="40" x="915" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="act_email" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontColor=#000000;" value="Dịch vụ email" vertex="1">
+          <mxGeometry height="80" width="40" x="915" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_xem_nhom" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=13;fontColor=#000000;" value="Xem sản phẩm&lt;br&gt;theo nhóm" vertex="1">
+          <mxGeometry height="75" width="205" x="215" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_xem_chitiet" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=13;fontColor=#000000;" value="Xem chi tiết sản phẩm" vertex="1">
+          <mxGeometry height="75" width="205" x="215" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_giohang" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=13;fontColor=#000000;" value="Quản lý giỏ hàng" vertex="1">
+          <mxGeometry height="75" width="205" x="215" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_dangky" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=13;fontColor=#000000;" value="Đăng ký tài khoản" vertex="1">
+          <mxGeometry height="75" width="205" x="215" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_dangnhap" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=13;fontColor=#000000;" value="Đăng nhập" vertex="1">
+          <mxGeometry height="75" width="205" x="215" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_dathang" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=13;fontColor=#000000;" value="Đặt hàng" vertex="1">
+          <mxGeometry height="75" width="205" x="215" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_xacminh_tt" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=13;fontColor=#000000;" value="Xác minh thanh toán" vertex="1">
+          <mxGeometry height="75" width="205" x="580" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_email_xacnhan" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=13;fontColor=#000000;" value="Gửi email xác nhận&lt;br&gt;đơn hàng" vertex="1">
+          <mxGeometry height="75" width="205" x="580" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="e_kh_xem_nhom" edge="1" parent="1" source="act_kh" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.3;entryX=0;entryY=0.5;" target="uc_xem_nhom">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_kh_xem_chitiet" edge="1" parent="1" source="act_kh" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" target="uc_xem_chitiet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_kh_giohang" edge="1" parent="1" source="act_kh" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.45;entryX=0;entryY=0.5;" target="uc_giohang">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_kh_dangky" edge="1" parent="1" source="act_kh" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.55;entryX=0;entryY=0.5;" target="uc_dangky">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_kh_dangnhap" edge="1" parent="1" source="act_kh" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.65;entryX=0;entryY=0.5;" target="uc_dangnhap">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_kh_dathang" edge="1" parent="1" source="act_kh" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" target="uc_dathang">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_qlsp_xem_nhom" edge="1" parent="1" source="act_qlsp" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0;exitY=0.33;entryX=1;entryY=0.5;" target="uc_xem_nhom">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_qlsp_xem_chitiet" edge="1" parent="1" source="act_qlsp" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="uc_xem_chitiet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_payment_xacminh" edge="1" parent="1" source="act_payment" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="uc_xacminh_tt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_email_xacnhan" edge="1" parent="1" source="act_email" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.2;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="uc_email_xacnhan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_inc_dathang_xacminh" edge="1" parent="1" source="uc_dathang" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endFill=0;endSize=8;strokeColor=#000000;strokeWidth=1.2;exitX=1;exitY=0.3;entryX=0;entryY=0.7;" target="uc_xacminh_tt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_include" connectable="0" parent="e_inc_dathang_xacminh" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;fontColor=#000000;backgroundColor=none;" value="«include»" vertex="1">
+          <mxGeometry relative="1" y="-14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ext_email_dathang" edge="1" parent="1" source="uc_email_xacnhan" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endFill=0;endSize=8;strokeColor=#000000;strokeWidth=1.2;exitX=0;exitY=0.3;entryX=1;entryY=0.75;" target="uc_dathang">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_extend" connectable="0" parent="e_ext_email_dathang" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=12;fontColor=#000000;backgroundColor=none;" value="«extend»" vertex="1">
+          <mxGeometry relative="1" y="14" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

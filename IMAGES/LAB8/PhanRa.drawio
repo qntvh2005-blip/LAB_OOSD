@@ -1,0 +1,149 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Hj95sIkJg3wrVaGf3cdq">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uc_sub_title" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontStyle=0;fontSize=14;" value="&lt;span style=&quot;font-size: 18px; color: rgb(26, 54, 93);&quot;&gt;USE CASE DIAGRAM PHÂN RÃ: KÝ HỢP ĐỒNG → THANH TOÁN T7+ → HÓA ĐƠN DỊCH VỤ → GIA HẠN&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="900" x="220" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="card1" parent="1" style="swimlane;startSize=28;html=1;rounded=1;arcSize=4;fontStyle=0;fontSize=14;" value="1. Phân Rã Use Case: Ký Hợp Đồng Thuê Văn Phòng (UC03)" vertex="1">
+          <mxGeometry height="380" width="600" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p_uc1" parent="card1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0;fontSize=14;" value="Ký hợp đồng thuê VP&#xa;(&amp;gt;=6 tháng)" vertex="1">
+          <mxGeometry height="65" width="160" x="30" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc1_1" parent="card1" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Chọn một hoặc nhiều&#xa;văn phòng còn trống" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc1_2" parent="card1" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Kiểm tra thời hạn&#xa;thuê (&amp;gt;= 6 tháng)" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc1_3" parent="card1" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Tính tiền cọc &amp;amp; tiền thuê&#xa;trả trước 6 tháng" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc1_4" parent="card1" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Tự động sinh lịch trả&#xa;từ tháng thứ 7 trở đi" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc1_5" parent="card1" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Cập nhật trạng thái&#xa;văn phòng &#39;Đang thuê&#39;" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="e_1_1" edge="1" parent="card1" source="p_uc1" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc1_1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_1_2" edge="1" parent="card1" source="p_uc1" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc1_2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_1_3" edge="1" parent="card1" source="p_uc1" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc1_3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_1_4" edge="1" parent="card1" source="p_uc1" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc1_4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_1_5" edge="1" parent="card1" source="p_uc1" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc1_5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="card2" parent="1" style="swimlane;startSize=28;html=1;rounded=1;arcSize=4;fontStyle=0;fontSize=14;" value="2. Phân Rã Use Case: Thanh Toán Tiền Thuê Văn Phòng T7+ (UC04)" vertex="1">
+          <mxGeometry height="380" width="610" x="690" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p_uc2" parent="card2" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0;fontSize=14;" value="Thanh toán tiền thuê T7+&#xa;(Đầu mỗi tháng)" vertex="1">
+          <mxGeometry height="65" width="165" x="30" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc2_1" parent="card2" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Tra cứu kỳ thanh toán&#xa;&amp;amp; hạn thanh toán" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc2_2" parent="card2" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Thu tiền thuê tháng&#xa;&amp;amp; xuất phiếu thu/hóa đơn" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc2_3" parent="card2" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Cảnh báo công nợ&#xa;khi quá hạn thanh toán" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc2_4" parent="card2" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Tính tiền phạt chậm nộp&#xa;(nếu vượt ngày hẹn)" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="e_2_1" edge="1" parent="card2" source="p_uc2" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc2_1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_2_2" edge="1" parent="card2" source="p_uc2" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc2_2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_2_3" edge="1" parent="card2" source="c_uc2_3" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="p_uc2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_2_4" edge="1" parent="card2" source="c_uc2_4" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="p_uc2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="card3" parent="1" style="swimlane;startSize=28;html=1;rounded=1;arcSize=4;fontStyle=0;fontSize=14;" value="3. Phân Rã Use Case: Quản Lý &amp;amp; Thu Hóa Đơn Dịch Vụ (UC05)" vertex="1">
+          <mxGeometry height="380" width="600" x="40" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="p_uc3" parent="card3" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0;fontSize=14;" value="Lập &amp;amp; thu hóa đơn DV&#xa;(Cuối mỗi tháng)" vertex="1">
+          <mxGeometry height="65" width="165" x="30" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc3_1" parent="card3" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Ghi nhận chỉ số tiêu thụ&#xa;(Điện, nước, thẻ xe...)" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc3_2" parent="card3" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Tính tiền theo đơn giá&#xa;&amp;amp; lũy tiến quy định" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc3_3" parent="card3" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Thu tiền &amp;amp; xuất biên lai&#xa;thanh toán dịch vụ" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc3_4" parent="card3" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Cảnh báo trễ hạn DV&#xa;&amp;amp; tạm khóa thẻ giữ xe" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="e_3_1" edge="1" parent="card3" source="p_uc3" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc3_1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_3_2" edge="1" parent="card3" source="p_uc3" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc3_2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_3_3" edge="1" parent="card3" source="p_uc3" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc3_3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_3_4" edge="1" parent="card3" source="c_uc3_4" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="p_uc3" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="0.0006" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card4" parent="1" style="swimlane;startSize=28;html=1;rounded=1;arcSize=4;fontStyle=0;fontSize=14;" value="4. Phân Rã Use Case: Lập Phiếu Gia Hạn Hợp Đồng (UC06)" vertex="1">
+          <mxGeometry height="380" width="610" x="690" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="p_uc4" parent="card4" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0;fontSize=14;" value="Lập phiếu gia hạn HĐ&#xa;(&amp;lt;=1/2 TG gốc, sạch nợ)" vertex="1">
+          <mxGeometry height="65" width="165" x="30" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc4_1" parent="card4" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Kiểm tra thời gian gia hạn&#xa;(&amp;lt;= 1/2 thời hạn hợp đồng)" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc4_2" parent="card4" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Kiểm tra sạch nợ&#xa;tiền thuê văn phòng" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc4_3" parent="card4" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Kiểm tra sạch nợ&#xa;hóa đơn dịch vụ" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc4_4" parent="card4" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Cập nhật ngày kết thúc HĐ&#xa;&amp;amp; tự động sinh kỳ thu mới" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="c_uc4_5" parent="card4" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fontStyle=0" value="Từ chối gia hạn &amp;amp; thông báo&#xa;(nếu còn nợ / vượt 1/2 TG)" vertex="1">
+          <mxGeometry height="50" width="180" x="360" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="e_4_1" edge="1" parent="card4" source="p_uc4" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc4_1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_4_2" edge="1" parent="card4" source="p_uc4" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=#000000;fontSize=14;fontStyle=0" target="c_uc4_2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_4_3" edge="1" parent="card4" source="p_uc4" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=light-dark(#080808, #af7a2d);fontSize=14;fontStyle=0;strokeColor=light-dark(#0d0d0d, #ededed);" target="c_uc4_3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_4_4" edge="1" parent="card4" source="p_uc4" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=light-dark(#141414, #af7a2d);fontSize=14;fontStyle=0" target="c_uc4_4" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_4_5" edge="1" parent="card4" source="c_uc4_5" style="endArrow=open;endSize=8;dashed=1;html=1;strokeWidth=1.2;fontColor=light-dark(#121212, #ff7b7b);fontSize=14;fontStyle=0" target="p_uc4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="310" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

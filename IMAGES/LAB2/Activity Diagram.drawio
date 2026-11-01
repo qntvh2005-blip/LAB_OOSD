@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="lo4LnciorCX0z-9tBUhB">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lbl_title" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" value="ACTIVITY DIAGRAM - UC04: ĐĂNG KÝ MƯỢN SÁCH" vertex="1">
+          <mxGeometry height="30" width="500" x="200" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="swim_pool" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=0;horizontal=0;horizontalStack=1;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="960" width="800" x="50" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_docgia" parent="swim_pool" style="swimlane;startSize=40;strokeWidth=1.5;fontSize=14;fontStyle=1;align=center;" value="Độc giả" vertex="1">
+          <mxGeometry height="960" width="360" as="geometry" />
+        </mxCell>
+        <mxCell id="act_chonsach" parent="lane_docgia" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Chọn sách muốn mượn" vertex="1">
+          <mxGeometry height="40" width="170" x="95" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="act_chon_dk" parent="lane_docgia" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Chọn chức năng&#xa;Đăng ký mượn" vertex="1">
+          <mxGeometry height="45" width="150" x="110" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_conhap_the" parent="lane_docgia" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;strokeWidth=1.2;" value="Có nhập&#xa;mã thẻ?" vertex="1">
+          <mxGeometry height="60" width="130" x="120" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="act_nhap_the" parent="lane_docgia" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Nhập Mã thẻ thư viện" vertex="1">
+          <mxGeometry height="40" width="160" x="105" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_co_nhap" edge="1" parent="lane_docgia" source="dec_conhap_the" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="act_nhap_the" value="Có">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t7rgh0s5t7bn9nzD-3bk-6" parent="lane_docgia" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="165" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t7rgh0s5t7bn9nzD-3bk-7" edge="1" parent="lane_docgia" source="t7rgh0s5t7bn9nzD-3bk-6" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#000000;rounded=0;defaultLabelBackgroundColor=page;" target="act_chonsach" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="swim_pool" source="act_chonsach" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="act_hienthitt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_consach_co" edge="1" parent="swim_pool" source="dec_consach" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="act_chon_dk" value="Có">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="280" />
+              <mxPoint x="185" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_dk_yeucau" edge="1" parent="swim_pool" source="act_chon_dk" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="act_yeucau_the">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_yeucau_dec" edge="1" parent="swim_pool" source="act_yeucau_the" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="dec_conhap_the">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_khong_nhap" edge="1" parent="swim_pool" source="dec_conhap_the" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="act_khong_ghinhan" value="Không">
+          <mxGeometry relative="1" x="-0.2241" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_nhap_tiepnhan" edge="1" parent="swim_pool" source="act_nhap_the" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="act_tiepnhan_the">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_hethong" parent="swim_pool" style="swimlane;startSize=40;strokeWidth=1.5;fontSize=14;fontStyle=1;align=center;" value="Hệ thống" vertex="1">
+          <mxGeometry height="960" width="440" x="360" as="geometry" />
+        </mxCell>
+        <mxCell id="act_hienthitt" parent="lane_hethong" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Hiển thị thông tin sách" vertex="1">
+          <mxGeometry height="40" width="175" x="135" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="act_hienthisl" parent="lane_hethong" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Hiển thị số lượng sách còn" vertex="1">
+          <mxGeometry height="40" width="175" x="135" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_consach" parent="lane_hethong" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;strokeWidth=1.2;" value="Còn&#xa;sách?" vertex="1">
+          <mxGeometry height="60" width="120" x="162" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="act_het_sach" parent="lane_hethong" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Thông báo không còn sách&#xa;để đăng ký mượn" vertex="1">
+          <mxGeometry height="45" width="165" x="260" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="lane_hethong" source="act_hienthitt" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="act_hienthisl">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="lane_hethong" source="act_hienthisl" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="dec_consach">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_consach_khong" edge="1" parent="lane_hethong" source="dec_consach" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act_het_sach" value="Không">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="342" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_het_end" edge="1" parent="lane_hethong" source="act_het_sach" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t7rgh0s5t7bn9nzD-3bk-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="343" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_yeucau_the" parent="lane_hethong" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Yêu cầu nhập&#xa;Mã thẻ thư viện" vertex="1">
+          <mxGeometry height="45" width="140" x="50" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="act_khong_ghinhan" parent="lane_hethong" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Không ghi nhận yêu cầu&#xa;đăng ký mượn" vertex="1">
+          <mxGeometry height="45" width="160" x="122" y="447.5" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_khong_end" edge="1" parent="lane_hethong" source="act_khong_ghinhan" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t7rgh0s5t7bn9nzD-3bk-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="202" y="528" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="act_tiepnhan_the" parent="lane_hethong" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Tiếp nhận&#xa;Mã thẻ thư viện" vertex="1">
+          <mxGeometry height="45" width="140" x="50" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="act_ghinhan_yc" parent="lane_hethong" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Ghi nhận yêu cầu&#xa;đăng ký mượn" vertex="1">
+          <mxGeometry height="45" width="140" x="50" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_tiepnhan_ghinhan" edge="1" parent="lane_hethong" source="act_tiepnhan_the" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="act_ghinhan_yc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_thongbao_tc" parent="lane_hethong" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=12;strokeWidth=1.2;" value="Thông báo đăng ký&#xa;mượn thành công" vertex="1">
+          <mxGeometry height="45" width="160" x="40" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ghinhan_thongbao" edge="1" parent="lane_hethong" source="act_ghinhan_yc" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;" target="act_thongbao_tc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_tc_end" edge="1" parent="lane_hethong" source="act_thongbao_tc" style="endArrow=open;endSize=8;html=1;rounded=0;strokeWidth=1.2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t7rgh0s5t7bn9nzD-3bk-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7rgh0s5t7bn9nzD-3bk-1" parent="lane_hethong" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="105" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="t7rgh0s5t7bn9nzD-3bk-2" parent="lane_hethong" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="327.5" y="447.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t7rgh0s5t7bn9nzD-3bk-3" parent="lane_hethong" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="187" y="528" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

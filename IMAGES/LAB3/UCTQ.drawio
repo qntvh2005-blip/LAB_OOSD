@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="1FCiw7WKTKLIiVOeJenT">
+    <mxGraphModel dx="1429" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;strokeWidth=1.2;" value="" vertex="1">
+          <mxGeometry height="704" width="590" x="266" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;strokeColor=none;fillColor=none;" value="HE THONG QUAN LY KHACH SAN" vertex="1">
+          <mxGeometry height="28" width="380" x="370" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="nv" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;strokeColor=#CC0033;" value="Nhan vien" vertex="1">
+          <mxGeometry height="65" width="40" x="20" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="letan" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;strokeColor=#CC0033;" value="NV le tan" vertex="1">
+          <mxGeometry height="65" width="40" x="133" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="phucvu" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;strokeColor=#CC0033;" value="NV phuc vu&lt;br&gt;phong" vertex="1">
+          <mxGeometry height="65" width="40" x="133" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="thanhtoan" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;strokeColor=#CC0033;" value="NV thanh&lt;br&gt;toan" vertex="1">
+          <mxGeometry height="65" width="40" x="133" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="quanly" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;strokeColor=#CC0033;" value="Quan ly" vertex="1">
+          <mxGeometry height="65" width="40" x="133" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="trunk" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#CC0033;strokeWidth=1.2;startArrow=none;endArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="160" as="sourcePoint" />
+            <mxPoint x="40" y="694" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="branch1" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="251" as="sourcePoint" />
+            <mxPoint x="137" y="251" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="branch2" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="408" as="sourcePoint" />
+            <mxPoint x="137" y="408" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="branch3" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="565" as="sourcePoint" />
+            <mxPoint x="137" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="branch4" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=none;startArrow=none;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="694" as="sourcePoint" />
+            <mxPoint x="137" y="694" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="triangle" parent="1" style="triangle;direction=north;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CC0033;strokeWidth=1.2;rotation=0;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="33" y="153" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Quan ly danh muc" vertex="1">
+          <mxGeometry height="37" width="134" x="376" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Ghi nhan dich vu" vertex="1">
+          <mxGeometry height="37" width="127" x="380" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Dat phong" vertex="1">
+          <mxGeometry height="37" width="94" x="396" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Nhan phong" vertex="1">
+          <mxGeometry height="37" width="103" x="391" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Ghi nhan nguoi luu tru" vertex="1">
+          <mxGeometry height="37" width="156" x="641" y="263" as="geometry" />
+        </mxCell>
+        <mxCell id="uc6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Quan ly phong - tien nghi" vertex="1">
+          <mxGeometry height="37" width="173" x="357" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="uc7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Lap phieu lap dat" vertex="1">
+          <mxGeometry height="37" width="130" x="378" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="uc8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Tra phong" vertex="1">
+          <mxGeometry height="37" width="94" x="396" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="uc9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Lap phieu den bu" vertex="1">
+          <mxGeometry height="37" width="130" x="653" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="uc10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Thanh toan" vertex="1">
+          <mxGeometry height="37" width="130" x="378" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="uc11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Lap hoa don" vertex="1">
+          <mxGeometry height="37" width="105" x="390" y="601" as="geometry" />
+        </mxCell>
+        <mxCell id="uc12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#CC0033;fontSize=12;" value="Tra cuu / thong ke" vertex="1">
+          <mxGeometry height="37" width="134" x="376" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="nv" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="nv" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="letan" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="letan" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="include" edge="1" parent="1" source="uc4" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 4;strokeColor=#CC0033;endArrow=open;endFill=0;fontSize=11;labelBackgroundColor=#FFFFCC;" target="uc5" value="&amp;lt;include&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="phucvu" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="phucvu" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="phucvu" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="thanhtoan" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="thanhtoan" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="thanhtoan" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="extend" edge="1" parent="1" source="uc9" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 4;strokeColor=#CC0033;endArrow=open;endFill=0;fontSize=11;labelBackgroundColor=#FFFFCC;" target="uc8" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="quanly" style="edgeStyle=none;html=1;strokeColor=#CC0033;endArrow=open;endFill=0;" target="uc12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

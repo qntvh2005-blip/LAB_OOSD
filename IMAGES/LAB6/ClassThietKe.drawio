@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="8Cw0_1ii3y9TD0LbJzEb">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c_FrmToaThuoc" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="FrmToaThuoc" vertex="1">
+          <mxGeometry height="215" width="340" x="30" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_FrmToaThuoc" parent="c_FrmToaThuoc" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;" value="- svc : ToaThuocService&#xa;- dsThuocKe :&#xa;BindingList&lt;ChiTietToaItem&gt;" vertex="1">
+          <mxGeometry height="60" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="m_FrmToaThuoc" parent="c_FrmToaThuoc" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;" value="+ btnThemThuoc_Click(sender e)&#xa;+ btnLapToa_Click(sender e)&#xa;+ Tai()" vertex="1">
+          <mxGeometry height="129" width="340" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="c_ToaThuocService" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="ToaThuocService" vertex="1">
+          <mxGeometry height="215" width="470" x="560" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a_ToaThuocService" parent="c_ToaThuocService" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;" value="" vertex="1">
+          <mxGeometry height="10" width="470" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="m_ToaThuocService" parent="c_ToaThuocService" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;" value="+ LapToaThuoc(maToa:string maPK:string&#xa;loiDan:string dsThuoc:List&lt;ChiTietToaItem&gt;)&#xa;: KetQuaXuLy&#xa;+ LayTatCaToaThuoc() : DataTable&#xa;+ LayChiTietToa(maToa:string) : DataTable" vertex="1">
+          <mxGeometry height="179" width="470" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c_ChiTietToaItem" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="ChiTietToaItem" vertex="1">
+          <mxGeometry height="250" width="340" x="30" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="a_ChiTietToaItem" parent="c_ChiTietToaItem" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;" value="+ MaThuoc : string&#xa;+ TenThuoc : string&#xa;+ SoLuong : int&#xa;+ LieuDung : string&#xa;+ CachDung : string&#xa;+ DonGia : decimal&#xa;+ ThanhTien : decimal {get}" vertex="1">
+          <mxGeometry height="212" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="m_ChiTietToaItem" parent="c_ChiTietToaItem" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;" value="" vertex="1">
+          <mxGeometry height="12" width="340" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="c_Db" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Db" vertex="1">
+          <mxGeometry height="210" width="470" x="560" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Db" parent="c_Db" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;" value="" vertex="1">
+          <mxGeometry height="10" width="470" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="m_Db" parent="c_Db" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;" value="+ OpenConnection() : SqlConnection&#xa;+ Scalar(cn tr sql ps) : object&#xa;+ Execute(cn tr sql ps) : int&#xa;+ Query(sql ps) : DataTable" vertex="1">
+          <mxGeometry height="174" width="470" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c_KetQuaXuLy" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="KetQuaXuLy" vertex="1">
+          <mxGeometry height="100" width="550" x="390" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="a_KetQuaXuLy" parent="c_KetQuaXuLy" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;" value="+ ThanhCong : bool + ThongBao : string" vertex="1">
+          <mxGeometry height="30" width="550" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="m_KetQuaXuLy" parent="c_KetQuaXuLy" style="text;strokeColor=#800020;fillColor=#ffffcc;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;" value="+ Ok(thongBao duLieu) + Fail(thongBao)" vertex="1">
+          <mxGeometry height="44" width="550" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_frm_svc" edge="1" parent="1" source="c_FrmToaThuoc" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=1;exitY=0.55;exitDx=0;exitDy=0;entryX=0;entryY=0.55;entryDx=0;entryDy=0;" target="c_ToaThuocService" value="gọi">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_frm_item" edge="1" parent="1" source="c_FrmToaThuoc" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="c_ChiTietToaItem" value="0..* dòng tạm">
+          <mxGeometry relative="1" x="-0.1" y="45" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_svc_db" edge="1" parent="1" source="c_ToaThuocService" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="c_Db" value="gọi trong transaction">
+          <mxGeometry relative="1" x="-0.1" y="65" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

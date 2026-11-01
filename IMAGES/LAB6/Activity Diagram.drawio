@@ -1,0 +1,124 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="j6MmC8tMNPYZsje993wP">
+    <mxGraphModel dx="1429" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node_start" parent="1" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#800020;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="403" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="act_tiep_nhan" parent="1" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Tiếp nhận tra cứu hồ sơ" vertex="1">
+          <mxGeometry height="55" width="250" x="290" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_ho_so" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Đã có hồ sơ?" vertex="1">
+          <mxGeometry height="70" width="190" x="320" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="act_dang_ky" parent="1" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Đăng ký lần đầu thu lệ phí&lt;br&gt;và cấp hồ sơ trong transaction" vertex="1">
+          <mxGeometry height="68" width="260" x="60" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="act_chon_ho_so" parent="1" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Chọn hồ sơ loại khám khoa&lt;br&gt;bác sĩ và lịch nếu định kỳ" vertex="1">
+          <mxGeometry height="68" width="280" x="510" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="act_ghi_trieu_chung" parent="1" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Ghi triệu chứng và chẩn đoán&lt;br&gt;Tạo phiếu khám trong transaction" vertex="1">
+          <mxGeometry height="65" width="280" x="510" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_xet_nghiem" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Cần xét nghiệm?" vertex="1">
+          <mxGeometry height="65" width="200" x="550" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="act_chi_dinh_xn" parent="1" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Chỉ định xét nghiệm &amp;rarr; KTV nhập kết quả&lt;br&gt;Bác sĩ xem kết quả của đúng phiếu khám" vertex="1">
+          <mxGeometry height="70" width="350" x="60" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_thuoc" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Cần thuốc?" vertex="1">
+          <mxGeometry height="65" width="180" x="560" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="act_chon_thuoc" parent="1" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Chọn thuốc nhập số lượng&lt;br&gt;liều dùng cách dùng và lời dặn" vertex="1">
+          <mxGeometry height="70" width="280" x="510" y="715" as="geometry" />
+        </mxCell>
+        <mxCell id="act_commit_toa" parent="1" style="rounded=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#800020;strokeWidth=1.4;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Commit lưu toa và chi tiết&lt;br&gt;Thông báo và tải lại danh sách" vertex="1">
+          <mxGeometry height="70" width="280" x="510" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="node_end" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#800020;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="424" y="925" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_start" edge="1" parent="1" source="node_start" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;" target="act_tiep_nhan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_tiepnhan_dec1" edge="1" parent="1" source="act_tiep_nhan" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;" target="dec_ho_so" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_dec1_dangky" edge="1" parent="1" source="dec_ho_so" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act_dang_ky" value="[Chưa có]">
+          <mxGeometry relative="1" x="-0.3" y="-12" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="190" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_dec1_chonhoso" edge="1" parent="1" source="dec_ho_so" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act_chon_ho_so" value="[Đã có]">
+          <mxGeometry relative="1" x="-0.3" y="14" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="650" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_dangky_chonhoso" edge="1" parent="1" source="act_dang_ky" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act_chon_ho_so" value="[Đăng ký thành công]">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_chonhoso_ghitrieuchung" edge="1" parent="1" source="act_chon_ho_so" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;" target="act_ghi_trieu_chung" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_ghitrieuchung_dec2" edge="1" parent="1" source="act_ghi_trieu_chung" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;" target="dec_xet_nghiem" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_dec2_chidinh" edge="1" parent="1" source="dec_xet_nghiem" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act_chi_dinh_xn" value="[Có]">
+          <mxGeometry relative="1" x="-0.3" y="-14" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="235" y="513" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_dec2_decthuoc" edge="1" parent="1" source="dec_xet_nghiem" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dec_thuoc" value="[Không]">
+          <mxGeometry relative="1" x="-0.1" y="16" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_chidinh_decthuoc" edge="1" parent="1" source="act_chi_dinh_xn" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dec_thuoc" value="[Đủ kết quả]">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_decthuoc_chonthuoc" edge="1" parent="1" source="dec_thuoc" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act_chon_thuoc" value="[Có]">
+          <mxGeometry relative="1" y="12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_decthuoc_end" edge="1" parent="1" source="dec_thuoc" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="node_end" value="[Không kê thuốc]">
+          <mxGeometry relative="1" x="-0.8" y="-12" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="870" y="638" />
+              <mxPoint x="870" y="937" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_chonthuoc_commit" edge="1" parent="1" source="act_chon_thuoc" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;" target="act_commit_toa" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_commit_end" edge="1" parent="1" source="act_commit_toa" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=7;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="node_end" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="937" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="footer_note" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;" value="Lỗi kiểm tra hoặc lỗi lưu: báo lỗi và sửa dữ liệu, không đi tiếp như đã thành công. Thanh toán và hoàn tất thực hiện sau phạm vi Câu 4." vertex="1">
+          <mxGeometry height="25" width="750" x="60" y="965" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

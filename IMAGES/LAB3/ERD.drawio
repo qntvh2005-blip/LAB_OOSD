@@ -1,0 +1,334 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="at9n4u25Uc0JNmbVPafU">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t_TienNghi" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="TienNghi" vertex="1">
+          <mxGeometry height="130" width="190" x="190" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t_TienNghi_pk" parent="t_TienNghi" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:35px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaTienNghi&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_TienNghi_div" parent="t_TienNghi" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="190" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_TienNghi_cols" parent="t_TienNghi" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:35px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;MaLoaiTN&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;SoThuTu&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TinhTrangHienTai&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(100)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="76" width="190" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietPhieuDenBu" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="ChiTietPhieuDenBu" vertex="1">
+          <mxGeometry height="130" width="195" x="405" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietPhieuDenBu_pk" parent="t_ChiTietPhieuDenBu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:45px;&quot;&gt;PK,FK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoPhieuDenBu&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PK,FK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaTienNghi&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="42" width="195" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietPhieuDenBu_div" parent="t_ChiTietPhieuDenBu" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="195" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietPhieuDenBu_cols" parent="t_ChiTietPhieuDenBu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:45px;&quot;&gt;&lt;/td&gt;&lt;td&gt;MucDoThietHai&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(80)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;SoTien&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="58" width="195" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="t_NhanVien" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="NhanVien" vertex="1">
+          <mxGeometry height="130" width="170" x="635" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t_NhanVien_pk" parent="t_NhanVien" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaNV&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_NhanVien_div" parent="t_NhanVien" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="170" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_NhanVien_cols" parent="t_NhanVien" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;&lt;/td&gt;&lt;td&gt;HoTen&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(120)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;VaiTro&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(50)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;SoDienThoai&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="76" width="170" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_HoaDon" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="HoaDon" vertex="1">
+          <mxGeometry height="235" width="180" x="840" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="t_HoaDon_pk" parent="t_HoaDon" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoHoaDon&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_HoaDon_div" parent="t_HoaDon" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="180" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_HoaDon_cols" parent="t_HoaDon" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;SoPhieuDat&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgayLap&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;datetime&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;MaNV&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;SoNgayTinhTien&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TienPhong&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TienDichVu&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TongTien&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TrangThai&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="181" width="180" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ThanhToan" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="ThanhToan" vertex="1">
+          <mxGeometry height="150" width="175" x="1055" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ThanhToan_pk" parent="t_ThanhToan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaThanhToan&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="175" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ThanhToan_div" parent="t_ThanhToan" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="175" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ThanhToan_cols" parent="t_ThanhToan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;SoHoaDon&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgayThanhToan&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;datetime&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;HinhThuc&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;SoTien&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="96" width="175" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_LoaiTienNghi" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="LoaiTienNghi" vertex="1">
+          <mxGeometry height="90" width="160" x="15" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="t_LoaiTienNghi_pk" parent="t_LoaiTienNghi" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaLoaiTN&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_LoaiTienNghi_div" parent="t_LoaiTienNghi" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_LoaiTienNghi_cols" parent="t_LoaiTienNghi" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;&lt;/td&gt;&lt;td&gt;TenLoaiTN&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(100)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="36" width="160" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuLapDat" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="PhieuLapDat" vertex="1">
+          <mxGeometry height="190" width="185" x="195" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuLapDat_pk" parent="t_PhieuLapDat" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoPhieuLapDat&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="185" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuLapDat_div" parent="t_PhieuLapDat" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="185" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuLapDat_cols" parent="t_PhieuLapDat" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;MaTienNghi&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;SoPhong&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgayLap&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TinhTrang&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(100)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;MaNV&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;GhiChu&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(250)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="136" width="185" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuDenBu" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="PhieuDenBu" vertex="1">
+          <mxGeometry height="170" width="175" x="410" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuDenBu_pk" parent="t_PhieuDenBu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoPhieuDenBu&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="175" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuDenBu_div" parent="t_PhieuDenBu" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="175" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuDenBu_cols" parent="t_PhieuDenBu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;SoPhieuDat&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;SoPhong&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgayLap&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;datetime&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;MaNV&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TongTien&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="116" width="175" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietPhieuSuDungDV" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="ChiTietPhieuSuDungDV" vertex="1">
+          <mxGeometry height="145" width="185" x="615" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietPhieuSuDungDV_pk" parent="t_ChiTietPhieuSuDungDV" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:45px;&quot;&gt;PK,FK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoPhieuSDDV&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PK,FK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaDV&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="42" width="185" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietPhieuSuDungDV_div" parent="t_ChiTietPhieuSuDungDV" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="185" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietPhieuSuDungDV_cols" parent="t_ChiTietPhieuSuDungDV" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:45px;&quot;&gt;&lt;/td&gt;&lt;td&gt;SoLuong&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;DonGia&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;ThanhTien&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="73" width="185" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuSuDungDV" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="PhieuSuDungDV" vertex="1">
+          <mxGeometry height="150" width="165" x="840" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuSuDungDV_pk" parent="t_PhieuSuDungDV" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoPhieuSDDV&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="165" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuSuDungDV_div" parent="t_PhieuSuDungDV" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="165" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuSuDungDV_cols" parent="t_PhieuSuDungDV" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;SoPhieuDat&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;SoPhong&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgaySuDung&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;MaNV&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="96" width="165" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuDatPhong" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="PhieuDatPhong" vertex="1">
+          <mxGeometry height="260" width="185" x="1055" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuDatPhong_pk" parent="t_PhieuDatPhong" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoPhieuDat&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="185" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuDatPhong_div" parent="t_PhieuDatPhong" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="185" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_PhieuDatPhong_cols" parent="t_PhieuDatPhong" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;MaKhach&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;MaNVLeTan&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgayLap&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;datetime&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgayNhan&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgayTraDuKien&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TienCoc&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;KenhDat&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TrangThai&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgayNhanThucTe&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;datetime&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NgayTraThucTe&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;datetime&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="206" width="185" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_QuyDinhDenBu" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="QuyDinhDenBu" vertex="1">
+          <mxGeometry height="130" width="170" x="15" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="t_QuyDinhDenBu_pk" parent="t_QuyDinhDenBu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaQuyDinh&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_QuyDinhDenBu_div" parent="t_QuyDinhDenBu" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="170" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_QuyDinhDenBu_cols" parent="t_QuyDinhDenBu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;MaLoaiTN&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MucDoThietHai&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(80)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;MucDenBu&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="76" width="170" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_Phong" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="Phong" vertex="1">
+          <mxGeometry height="145" width="175" x="200" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="t_Phong_pk" parent="t_Phong" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoPhong&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="175" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_Phong_div" parent="t_Phong" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="175" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_Phong_cols" parent="t_Phong" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;MaKhuVuc&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;SoNguoiToiDa&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;DonGiaNgay&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;TrangThai&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="91" width="175" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_DichVu" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="DichVu" vertex="1">
+          <mxGeometry height="145" width="160" x="630" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="t_DichVu_pk" parent="t_DichVu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaDV&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_DichVu_div" parent="t_DichVu" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_DichVu_cols" parent="t_DichVu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;&lt;/td&gt;&lt;td&gt;TenDV&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(120)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;DonViTinh&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(40)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;DonGia&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;decimal(18,2)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="91" width="160" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_KhachHang" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="KhachHang" vertex="1">
+          <mxGeometry height="150" width="170" x="1070" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="t_KhachHang_pk" parent="t_KhachHang" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaKhach&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_KhachHang_div" parent="t_KhachHang" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="170" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_KhachHang_cols" parent="t_KhachHang" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;&lt;/td&gt;&lt;td&gt;HoTen&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(120)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;SoCMND&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;QuocTich&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(80)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;SoDienThoai&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="96" width="170" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_KhuVuc" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="KhuVuc" vertex="1">
+          <mxGeometry height="85" width="160" x="207" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="t_KhuVuc_pk" parent="t_KhuVuc" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaKhuVuc&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_KhuVuc_div" parent="t_KhuVuc" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_KhuVuc_cols" parent="t_KhuVuc" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;&lt;/td&gt;&lt;td&gt;TenKhuVuc&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(100)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="31" width="160" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietDatPhong" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="ChiTietDatPhong" vertex="1">
+          <mxGeometry height="100" width="200" x="580" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietDatPhong_pk" parent="t_ChiTietDatPhong" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:45px;&quot;&gt;PK,FK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoPhieuDat&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PK,FK&lt;/td&gt;&lt;td&gt;&lt;u&gt;SoPhong&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="42" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietDatPhong_div" parent="t_ChiTietDatPhong" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="200" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ChiTietDatPhong_cols" parent="t_ChiTietDatPhong" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:45px;&quot;&gt;&lt;/td&gt;&lt;td&gt;SoNguoi&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="28" width="200" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="t_NguoiLuuTru" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffffcc;horizontalStack=0;resizeParent=0;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;strokeColor=#800020;strokeWidth=1.2;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="NguoiLuuTru" vertex="1">
+          <mxGeometry height="170" width="160" x="845" y="815" as="geometry" />
+        </mxCell>
+        <mxCell id="t_NguoiLuuTru_pk" parent="t_NguoiLuuTru" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;PK&lt;/td&gt;&lt;td&gt;&lt;u&gt;MaNguoiLT&lt;/u&gt;&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;int&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="24" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="t_NguoiLuuTru_div" parent="t_NguoiLuuTru" style="line;strokeWidth=1;dashed=1;dashPattern=3 3;strokeColor=#800020;fillColor=none;align=left;verticalAlign=middle;" value="" vertex="1">
+          <mxGeometry height="4" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_NguoiLuuTru_cols" parent="t_NguoiLuuTru" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;html=1;" value="&lt;table style=&quot;width:100%;font-family:Times New Roman;font-size:11px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:30px;&quot;&gt;FK&lt;/td&gt;&lt;td&gt;SoPhieuDat&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;SoPhong&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;HoTen&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(120)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;SoCMND&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;varchar(30)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;QuocTich&lt;/td&gt;&lt;td style=&quot;text-align:right;&quot;&gt;nvarchar(80)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="116" width="160" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_1" edge="1" parent="1" source="t_LoaiTienNghi" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.8;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.8;entryDx=0;entryDy=0;" target="t_TienNghi" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_2" edge="1" parent="1" source="t_LoaiTienNghi" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_QuyDinhDenBu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_3" edge="1" parent="1" source="t_TienNghi" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERoneToMany;endSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_ChiTietPhieuDenBu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_4" edge="1" parent="1" source="t_TienNghi" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_PhieuLapDat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_5" edge="1" parent="1" source="t_Phong" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_PhieuLapDat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_6" edge="1" parent="1" source="t_KhuVuc" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERoneToMany;endSize=9;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_Phong" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_7" edge="1" parent="1" source="t_PhieuDenBu" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERoneToMany;endSize=9;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_ChiTietPhieuDenBu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_8" edge="1" parent="1" source="t_NhanVien" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0;exitY=0.9;exitDx=0;exitDy=0;entryX=1;entryY=0.2;entryDx=0;entryDy=0;" target="t_PhieuLapDat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_9" edge="1" parent="1" source="t_NhanVien" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.2;exitY=1;exitDx=0;exitDy=0;entryX=0.8;entryY=0;entryDx=0;entryDy=0;" target="t_PhieuDenBu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_10" edge="1" parent="1" source="t_NhanVien" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.8;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;" target="t_PhieuSuDungDV" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_11" edge="1" parent="1" source="t_NhanVien" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" target="t_PhieuDatPhong" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_12" edge="1" parent="1" source="t_NhanVien" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.45;entryDx=0;entryDy=0;" target="t_HoaDon" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_13" edge="1" parent="1" source="t_HoaDon" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_ThanhToan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_14" edge="1" parent="1" source="t_PhieuDatPhong" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToOne;endSize=9;exitX=0;exitY=0.08;exitDx=0;exitDy=0;entryX=1;entryY=0.9;entryDx=0;entryDy=0;" target="t_HoaDon" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_15" edge="1" parent="1" source="t_KhachHang" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_PhieuDatPhong" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_16" edge="1" parent="1" source="t_PhieuSuDungDV" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERoneToMany;endSize=9;exitX=0;exitY=0.45;exitDx=0;exitDy=0;entryX=1;entryY=0.45;entryDx=0;entryDy=0;" target="t_ChiTietPhieuSuDungDV" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_17" edge="1" parent="1" source="t_DichVu" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_ChiTietPhieuSuDungDV" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_18" edge="1" parent="1" source="t_Phong" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=1;exitY=0.8;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="t_ChiTietDatPhong" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_19" edge="1" parent="1" source="t_ChiTietDatPhong" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.2;exitY=0;exitDx=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_PhieuDenBu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_20" edge="1" parent="1" source="t_ChiTietDatPhong" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=0.8;exitY=0;exitDx=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_PhieuSuDungDV" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_21" edge="1" parent="1" source="t_PhieuDatPhong" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERoneToMany;endSize=9;exitX=0;exitY=0.9;exitDx=0;exitDy=0;entryX=1;entryY=0.3;entryDx=0;entryDy=0;" target="t_ChiTietDatPhong" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_22" edge="1" parent="1" source="t_ChiTietDatPhong" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=ERmandOne;startSize=9;endArrow=ERzeroToMany;endSize=9;exitX=1;exitY=0.6;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_NguoiLuuTru" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=12;fontColor=#000000;" value="&lt;b&gt;Ky hieu:&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="60" x="10" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_line_1" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=none;endArrow=ERmandOne;endSize=9;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="75" y="1045" as="sourcePoint" />
+            <mxPoint x="115" y="1045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg_lbl_1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=#000000;" value="Mot va chi mot" vertex="1">
+          <mxGeometry height="20" width="85" x="120" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_line_2" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=none;endArrow=ERzeroToOne;endSize=9;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1045" as="sourcePoint" />
+            <mxPoint x="260" y="1045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg_lbl_2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=#000000;" value="Khong hoac mot" vertex="1">
+          <mxGeometry height="20" width="90" x="265" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_line_3" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=none;endArrow=ERzeroToMany;endSize=9;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="1045" as="sourcePoint" />
+            <mxPoint x="415" y="1045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg_lbl_3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=#000000;" value="Khong hoac nhieu" vertex="1">
+          <mxGeometry height="20" width="100" x="420" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_line_4" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.2;startArrow=none;endArrow=ERoneToMany;endSize=9;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="1045" as="sourcePoint" />
+            <mxPoint x="575" y="1045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg_lbl_4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=#000000;" value="Mot hoac nhieu" vertex="1">
+          <mxGeometry height="20" width="90" x="580" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_pk_fk" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=11;fontColor=#000000;" value="PK: khoa chinh (gach chan)   FK: khoa ngoai" vertex="1">
+          <mxGeometry height="20" width="260" x="690" y="1035" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

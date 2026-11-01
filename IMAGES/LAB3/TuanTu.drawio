@@ -1,0 +1,242 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="AYIrVF8p-xmjscsdRG80">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actor_nv" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=none;" value=": NV le tan" vertex="1">
+          <mxGeometry height="65" width="30" x="40" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="line_nv" edge="1" parent="1" source="actor_nv" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obj_frm" parent="1" style="shape=umlBoundary;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=#ffffcc;" value=": FrmDatPhong" vertex="1">
+          <mxGeometry height="48" width="60" x="190" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="line_frm" edge="1" parent="1" source="pwJ_lagzM3-WRf6kBxWh-2" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obj_service" parent="1" style="shape=umlControl;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=#ffffcc;" value=": DatPhongService" vertex="1">
+          <mxGeometry height="50" width="45" x="365" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="line_service" edge="1" parent="1" source="obj_service" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="387" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obj_phong" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=#ffffcc;" value=": Phong" vertex="1">
+          <mxGeometry height="50" width="45" x="530" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="line_phong" edge="1" parent="1" source="pwJ_lagzM3-WRf6kBxWh-11" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="552" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obj_ctdp" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=#ffffcc;" value=": ChiTietDatPhong" vertex="1">
+          <mxGeometry height="50" width="45" x="698" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="line_ctdp" edge="1" parent="1" source="pwJ_lagzM3-WRf6kBxWh-8" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="900" as="sourcePoint" />
+            <mxPoint x="720" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="obj_pdp" parent="1" style="shape=umlEntity;whiteSpace=wrap;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeColor=#800020;strokeWidth=1.5;fillColor=#ffffcc;" value=": PhieuDatPhong" vertex="1">
+          <mxGeometry height="50" width="45" x="863" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="line_pdp" edge="1" parent="1" source="obj_pdp" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="886" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tag_alt" parent="1" style="shape=rect;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;strokeWidth=1.2;align=center;verticalAlign=middle;fontFamily=Times New Roman;fontSize=14;" value="&lt;b&gt;alt&lt;/b&gt;" vertex="1">
+          <mxGeometry height="25" width="35" x="140" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_guard_top" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="[so nguoi &amp;lt;= suc chua va khong trung lich]" vertex="1">
+          <mxGeometry height="20" width="280" x="180" y="612" as="geometry" />
+        </mxCell>
+        <mxCell id="line_alt_div" edge="1" parent="1" style="edgeStyle=none;html=1;dashed=1;dashPattern=8 6;strokeColor=#666666;strokeWidth=1.2;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="820" as="sourcePoint" />
+            <mxPoint x="980" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_guard_bot" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;" value="[vuot suc chua hoac trung lich]" vertex="1">
+          <mxGeometry height="20" width="210" x="145" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="msg_1" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" value="Chon khach, le tan, kenh dat, ngay nhan/tra, tien coc">
+          <mxGeometry relative="1" x="-0.0506" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="55" y="190" as="sourcePoint" />
+            <mxPoint x="213" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_2" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" value="Chon phong va so nguoi">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="235" as="sourcePoint" />
+            <mxPoint x="213" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;curved=0;" value="Them phong vao danh sach chon">
+          <mxGeometry relative="1" x="-0.0642" y="90" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="270" y="272" />
+              <mxPoint x="270" y="295" />
+            </Array>
+            <mxPoint x="227" y="272" as="sourcePoint" />
+            <mxPoint x="227" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_4" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" value="Nhan &quot;Lap phieu&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="338" as="sourcePoint" />
+            <mxPoint x="213" y="338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_5" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" value="TaoDatPhong(so, maKhach, maNV, nhan, tra, coc, ds)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="227" y="378" as="sourcePoint" />
+            <mxPoint x="380" y="378" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_6" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;curved=0;" value="Kiem tra du lieu, ngay tra &gt;= ngay nhan">
+          <mxGeometry relative="1" x="0.2" y="15" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="430" y="418" />
+              <mxPoint x="430" y="440" />
+            </Array>
+            <mxPoint x="394" y="418" as="sourcePoint" />
+            <mxPoint x="394" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_7" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" value="laySucChua(soPhong)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394" y="472" as="sourcePoint" />
+            <mxPoint x="545" y="472" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_8" edge="1" parent="1" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" value="SoNguoiToiDa">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="545" y="520" as="sourcePoint" />
+            <mxPoint x="394" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_9" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" target="pwJ_lagzM3-WRf6kBxWh-8" value="kiemTraTrungLich(soPhong, nhan, tra)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394" y="562" as="sourcePoint" />
+            <mxPoint x="713" y="562" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_10" edge="1" parent="1" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" value="ket qua kiem tra">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="713" y="602" as="sourcePoint" />
+            <mxPoint x="394" y="602" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_11" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" value="themPhieuDat(..., &quot;Da dat&quot;)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394" y="678" as="sourcePoint" />
+            <mxPoint x="879" y="678" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_12" edge="1" parent="1" source="pwJ_lagzM3-WRf6kBxWh-4" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;entryX=0;entryY=0.932;entryDx=0;entryDy=0;entryPerimeter=0;" target="pwJ_lagzM3-WRf6kBxWh-8" value="themChiTiet(soPhieu, soPhong, soNguoi)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394" y="718" as="sourcePoint" />
+            <mxPoint x="713" y="718" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_13" edge="1" parent="1" source="pwJ_lagzM3-WRf6kBxWh-4" style="html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;curved=0;entryX=0;entryY=1;entryDx=0;entryDy=-5;entryPerimeter=0;" target="pwJ_lagzM3-WRf6kBxWh-6" value="capNhatTrangThai(&quot;Da dat&quot;)">
+          <mxGeometry relative="1" x="0.0086" y="12" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="393.39800000000014" y="762.8399999999999" as="sourcePoint" />
+            <mxPoint x="545" y="762.04" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_14" edge="1" parent="1" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" target="pwJ_lagzM3-WRf6kBxWh-2" value="KetQuaXuLy.Ok">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="800" as="sourcePoint" />
+            <mxPoint x="227" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_15" edge="1" parent="1" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" target="pwJ_lagzM3-WRf6kBxWh-2" value="KetQuaXuLy.Fail (rollback)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="868" as="sourcePoint" />
+            <mxPoint x="227" y="868" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="msg_16" edge="1" parent="1" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" value="Thong bao ket qua lap phieu">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="213" y="930" as="sourcePoint" />
+            <mxPoint x="55" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-3" edge="1" parent="1" source="pwJ_lagzM3-WRf6kBxWh-13" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" target="pwJ_lagzM3-WRf6kBxWh-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="86" as="sourcePoint" />
+            <mxPoint x="220" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-2" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeColor=light-dark(#800020, #ededed);strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="152" width="14" x="213" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-5" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#800020;strokeWidth=1.3;endArrow=open;endSize=8;fontFamily=Times New Roman;fontSize=13;fontColor=#000000;verticalAlign=bottom;" target="pwJ_lagzM3-WRf6kBxWh-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394" y="718" as="sourcePoint" />
+            <mxPoint x="713" y="718" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-4" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeColor=light-dark(#800020, #ededed);strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="417" width="14" x="380.5" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-6" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeColor=light-dark(#800020, #ededed);strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="14" x="545" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-7" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeColor=light-dark(#800020, #ededed);strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="31" width="14" x="880" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-9" edge="1" parent="1" source="obj_ctdp" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" target="pwJ_lagzM3-WRf6kBxWh-8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="86" as="sourcePoint" />
+            <mxPoint x="720" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-8" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeColor=light-dark(#800020, #ededed);strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="176" width="14" x="710" y="554" as="geometry" />
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-10" edge="1" parent="1" source="pwJ_lagzM3-WRf6kBxWh-8" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" target="box_alt" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="730" as="sourcePoint" />
+            <mxPoint x="720" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="box_alt" parent="1" style="shape=rect;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;strokeWidth=1.2;" value="" vertex="1">
+          <mxGeometry height="280" width="840" x="140" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-12" edge="1" parent="1" source="obj_phong" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" target="pwJ_lagzM3-WRf6kBxWh-11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="552" y="86" as="sourcePoint" />
+            <mxPoint x="552" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-11" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeColor=light-dark(#800020, #ededed);strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="70" width="14" x="545" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-15" edge="1" parent="1" source="obj_frm" style="edgeStyle=none;html=1;dashed=1;dashPattern=6 6;strokeColor=#800020;strokeWidth=1.2;endArrow=none;" target="pwJ_lagzM3-WRf6kBxWh-13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="86" as="sourcePoint" />
+            <mxPoint x="220" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pwJ_lagzM3-WRf6kBxWh-13" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};strokeColor=light-dark(#800020, #ededed);strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="170" width="14" x="213" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
